@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Inter:wght@700&family=Lobster&family=M+PLUS+2&family=Montserrat&family=Nunito&family=Oswald:wght@500;700&family=Poppins:wght@500&family=Praise&family=Satisfy&family=Shippori+Antique&family=Source+Sans+Pro:wght@700&family=Ubuntu&display=swap');
+
+
+
+.menu-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+li {
+    list-style: none;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 5px 20px 180px
+}
+
+.half-width {
+    width: 50%;
+}
+
+.half-width h1 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.half-width p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn {
+    border: none;
+    background-color: rgba(224, 44, 109, 1);
+    color: white;
+    width: 196px;
+    height: 44px;
+    border-radius: 41px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.supporting-companies {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 155px;
+    box-shadow: 10px 10px 50px whitesmoke;
+    height: 110px;
+}
+
+.supporting-companies img {
+    cursor: pointer;
+}
+
+.popular-section h1 {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.name {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.ratings {
+    font-size: 15px;
+}
+
+.filled {
+    color: goldenrod;
+}
+
+.product-info {
+    color: #787885;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.popular-collections {
+    width: 1030px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding: 10px 30px;
+}
+
+.product {
+    width: 290px;
+    box-shadow: 10px 10px 50px whitesmoke;
+    padding: 10px 20px;
+}
+
+.product img {
+    width: 100%;
+    height: fit-content;
+}
+
+.featured-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: 1050px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 40px whitesmoke;
+    padding: 30px 40px;
+}
+
+.featured-products div {
+    width: 60%;
+}
+
+.featured-products-info h1 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.featured-products-info p {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+.icons i {
+    margin: 15px;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        width: 100%;
+    }
+
+    .mobile-menu {
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .top-banner {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 5px 20px 180px;
+    }
+
+    .top-banner img {
+        width: 100%;
+    }
+
+    .supporting-companies {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .supporting-companies img {
+        margin: 10px 0;
+    }
+
+    .popular-section h1 {
+        text-align: center;
+    }
+
+    .popular-collections {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .featured-products {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: -200px;
+    }
+}
